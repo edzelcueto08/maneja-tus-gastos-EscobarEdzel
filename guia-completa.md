@@ -132,9 +132,24 @@ Responder:
 - **GitHub automatic deploys**: `No`
 - **Overwrite index.html**: `No`
 
+Si no funciona el paso anterior modificar el archivo `.firebaserc` con lo siguiente
+
+```
+{
+  "projects": {
+    "default": "maneja-tus-gastos-[su apellido]"
+  }
+}
+
+```
+
 Esto actualiza `.firebaserc` con tu project ID real.
 
 ### Paso 4 — Service Account para GitHub Actions
+- Ir a agregar app
+- Poner el mismo nombre del proyecto
+-  todo siguiente y siguiente hasta ir a consola
+
 1. Firebase Console → ⚙️ **Configuración del proyecto** → **Cuentas de servicio**
 2. **"Generar nueva clave privada"** → descarga el JSON
 3. GitHub repo → **Settings → Secrets and variables → Actions → New secret**:
