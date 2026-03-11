@@ -8,7 +8,7 @@ jest.mock('../src/db', () => ({
 }));
 
 const app = require('../src/app');
-
+//hola
 // Mock Sequelize model to avoid real DB connection in tests
 jest.mock('../src/models/expense', () => {
   const mockExpenses = [
